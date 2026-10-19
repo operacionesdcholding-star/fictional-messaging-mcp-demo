@@ -1,0 +1,13 @@
+# Public SYNTHETIC data only. Free plan is required; do not upgrade automatically.
+services:
+  - type: web
+    name: fictional-messaging-mcp-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /healthz
+    autoDeployTrigger: "off"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14

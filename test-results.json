@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "protocol": "2025-11-25",
+  "transport": "local HTTP",
+  "tools": [
+    "list_demo_accounts",
+    "read_demo_messages"
+  ],
+  "checks": [
+    "health",
+    "untrusted host rejected",
+    "initialize",
+    "list_tools",
+    "read annotations",
+    "call list accounts",
+    "read alpha",
+    "read beta",
+    "invalid account rejected",
+    "send tool absent"
+  ],
+  "chatgpt_connection_tested": false,
+  "events_supported": false
+}
